@@ -1,0 +1,100 @@
+/*購物車 框架*/
+.cart{
+  width: 60%;
+  margin:0% 20%;
+  min-height: 750px;
+  margin-bottom: 20px;
+  font-size:22px;
+}
+.cart_input {
+    height:22px;
+    font-size:20px;
+}
+/*表單 框架*/
+form{
+  width: 100%;
+  padding-bottom:100px;
+  margin: 20px 0px 0px 0px;
+}
+/*商品 框架*/
+.product{
+  width: 100%;
+  height: 200px;
+  border-right: 3px solid #0d2a46;
+  border-left: 3px solid #0d2a46;
+  border-top: 3px solid #0d2a46;
+  border-bottom: 3px dashed #0d2a46;
+  margin: 30px 0px 10px 0px;
+}
+/*商品圖片 框架*/
+.product_img{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 20px 10px 10px 20px;
+  border:2px solid #8c8c8c;
+}/*商品圖片 大小*/
+.product_img img{
+  width: 150px;
+}
+/*商品 文字+價格框架*/
+.product_file{
+  width: 300px;
+  position: relative;
+  margin-left: 250px;
+  bottom:120px;
+}
+.product_name,.product_price{
+  font-size: 20px;
+  width: 250px;
+  text-align: right;
+}
+/*價格顏色*/
+.product_price{
+color: red;
+}
+.product_name{
+  border-bottom: 3px solid;
+  color: rgb(37, 48, 82);
+}
+/*總金額樣式*/
+.totals{
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-align: right;
+  font-size: 25px;
+}
+.totals_value{
+  color: red;
+  margin-left: 50px;
+}
+
+.CaButton {
+    float: right;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background: linear-gradient(to bottom, #48da91 5%, #418a8a 100%);
+    background-color: #6db5a2;
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 25px;
+    margin: 80px 0px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #3b8277;
+}
+
+    .CaButton:hover {
+        background: linear-gradient(to bottom, #6c7c7c 5%, #6db5a2 100%);
+        background-color: #6c7c7c;
+    }
+
+    .CaButton:active {
+        position: relative;
+        top: 1px;
+    }

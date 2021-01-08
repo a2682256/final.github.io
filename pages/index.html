@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,313&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../assets/css/minwtAdShowStyle.css" />
+	<title>veja</title>
+	<style>
+		@import url(../assets/css/header.css);
+		@import url(../assets/css/main.css);
+		@import url(../assets/css/banner.css);
+		@import url(../assets/css/introduction.css);
+		@import url(../assets/css/server.css);
+	</style>
+	<script type="text/javascript" src="../assets/script/jquery.js"></script>
+	<script type="text/javascript" src="../assets/script/minwtAdShow.js"></script>
+</head>
+<body>
+<!--廣告浮頁-->
+	<div id="ad" class="aaa" style="position:fixed;width:100%;z-index:2;">
+		<div style="position:static;width:1200px;height: 400px;margin:200px auto;border: solid;background-color:#dddddd;">
+			<div id="TopAD" style="position:absolute;">
+				<a class="server_X" href="javascript:void(0)" onclick="document.getElementById('ad').style.display = 'none';" style="position:absolute;right:0px;">X</a>
+				<div class="TopAdright"><a href="#"><img style="width:1200px;" border="0" /></a></div>
+				<div class="TopAdleft">
+					<h2><a href="#"></a></h2>
+					<div class="Adbody"><a href="#"></a></div>
+					<div class="link"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="list" style="display:none;">
+		<a href="product.html?class=sneaker&num=2" target="_blank"><img src="../assets/images/ad_1.png" title="V-12 經典休閒運動鞋" alt="" rel="" /></a>
+		<a href="product.html?class=leather&num=2" target="_blank"><img src="../assets/images/ad_2.png" title="圓頭網眼運動鞋" alt="" rel="" /></a>
+		<a href="product.html?class=leather&num=4" target="_blank"><img src="../assets/images/ad_3.png" title="麂皮拼接網眼球鞋" alt="" rel="" /></a>
+	</div>
+	<!--內文框架-->
+	<div class="big">
+		<!--css=header.css-->
+		<center>
+			<header>
+				<ul class="menu">
+					<li>
+						<a href="#">關於我們</a>
+						<ul>
+							<li>
+								<a href="#introduction">品牌介紹</a>
+							</li>
+							<li>
+								<a href="../pages/question.html">常見問題</a>
+							</li>
+							<li>
+								<a href="../pages/contact.html">聯絡我們</a>
+							</li>
+						</ul>
+					</li>
+						<li>
+							<a href="#">商品類別</a>
+							<ul>
+								<li>
+									<a href="../pages/all.html">全部商品</a>
+								</li>
+								<li>
+									<a href="all.html?class=0">運動鞋</a>
+								</li>
+								<li>
+									<a href="all.html?class=1">皮革運動鞋</a>
+								</li>
+								<li>
+									<a href="all.html?class=2">麂皮運動鞋</a>
+								</li>
+								<li>
+									<a href="all.html?class=3">帆布鞋</a>
+								</li>
+							</ul>
+						</li>
+					<li>
+						<a href="../pages/hot.html">熱銷排行</a>
+					</li>
+					<li>
+						<a href="#">會員中心</a>
+						<ul>
+							<li>
+								<a href="../pages/login.html">登入/註冊</a>
+							</li>
+							<li>
+								<a href="../pages/profile.html">會員資料</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../pages/cart.html">購物車</a>
+					</li>
+				</ul>
+			</header>
+		</center>
+
+		<!--css=introduction.css-->
+		<div class="introduction1">
+			<div class="intrr">
+				<div class="mySlides fade">
+					<a href="../pages/all.html" target="_blank"><img src="../assets/images/1.png" style="width:100%"></a>
+				</div>
+
+				<div class="mySlides fade">
+					<a href="../pages/all.html?class=4" target="_blank"><img src="../assets/images/2.png" style="width:100%"></a>
+				</div>
+
+				<div class="mySlides fade">
+					<a href="../pages/all.html?class=2" target="_blank"><img src="../assets/images/3.png" style="width:100%"></a>
+				</div>
+
+			</div>
+			<br>
+			<div style="text-align:center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			<script>
+				var slideIndex = 0;
+				showSlides();
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) { slideIndex = 1 }
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+					setTimeout(showSlides, 4000); // Change image every 2 seconds
+				}
+			</script>
+			<!--文字敘述-->
+			<div class="intr_font">
+				<center>
+					<div class="intr_font1">
+						<p>Veja環保鞋</p>
+						由兩名法國男性Sébastien Kopp和François-Ghislain Morillion創立<br>
+						不同於市面上的鞋子多使用人造橡膠，而是以亞馬遜雨林生產的野生天然橡膠為原料<br>目的就是為了減少森林被砍伐。
+					</div>
+				</center>
+			</div>
+		</div>
+		<a name="introduction"></a>
+		<div class="introduction2">
+			<div class="animation1">
+				<div class="animation2">
+					<div class="animation3">
+						<div>
+							<img src="../assets/images/intr2_2.jpeg" width="400" height="400" />
+						</div>
+						<div>
+							<img src="../assets/images/intr2_3.jpg" width="400" height="380" />
+						</div>
+						<div>
+							<img src="../assets/images/intr2_4.jpg" width="400" height="380" />
+						</div>
+						<div>
+							<img src="../assets/images/intr2_5.jpg" width="400" height="380" />
+						</div>
+						<div>
+							<img src="../assets/images/intr2.jpg" width="400" height="380" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="intr_font2">
+				<font>選擇可分解的帆布<br>採用自街頭收集而來的橡膠瓶子來製作鞋底<br>如此一來，即使鞋子完成了自己的使命，<br>仍能滋潤土壤，減低對環境的污染。</font>
+			</div>
+		</div>
+
+		<div class="introduction3">
+			<div class="intr_font3">
+				<font class="intr">
+					We prefer to develop strong roots <br>rather than to grow quickly and become a tall but very fragile tree.<br><br>
+				</font>
+				<font class="intr">比起追求急速長成高大卻脆弱的大樹，我們更希望建立穩定的根基。<br></font>
+				<p class="intr_name">&nbsp;—François Morillion, via Highsnobiety</p>
+			</div>
+			<div class="intr_img3">
+				<img src="../assets/images/intr3.jpg" width="500" height="450">
+			</div>
+		</div>
+
+		<footer>
+			<div class="">
+				<a name="contact"></a>
+				<div class="footer_img">
+					<a href="https://zh-tw.facebook.com/veja.fairtrade"><img src="../assets/images/fb.png"></a>
+					<a href="https://www.instagram.com/veja/"><img src="../assets/images/ig.png"></a>
+					<a href="mailto:veja@gmail.com"><img src="../assets/images/mail.png"></a>
+				</div>
+				<p>
+					<font>與我們聯繫</font><br><br>
+					客服電話：03-1234567<br>
+					聯絡地址：桃園市中壢區中北路XX號<br>
+					服務時間：週一至週五&nbsp;09:00~17:00
+				</p>
+
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

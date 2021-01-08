@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>veja</title>
+    <style>
+        @import url(../assets/css/header.css);
+        @import url(../assets/css/main.css);
+        @import url(../assets/css/banner.css);
+        @import url(../assets/css/introduction.css);
+        @import url(../assets/css/product.css);
+    </style>
+</head>
+
+<body>
+    <!--內文框架-->
+    <div class="big">
+
+        <!--css=header.css-->
+        <header>
+            <ul class="menu">
+                <li>
+                    <a href="../pages/index.html">關於我們</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/index.html">品牌介紹</a>
+                        </li>
+                        <li>
+                            <a href="../pages/question.html">常見問題</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                </li>
+                    <li>
+                        <a href="#">商品類別</a>
+                        <ul>
+                            <li>
+                                <a href="../pages/all.html">全部商品</a>
+                            </li>
+                            <li>
+                                <a href="all.html?class=0">運動鞋</a>
+                            </li>
+                            <li>
+                                <a href="all.html?class=1">皮革運動鞋</a>
+                            </li>
+                            <li>
+                                <a href="all.html?class=2">麂皮運動鞋</a>
+                            </li>
+                            <li>
+                                <a href="all.html?class=3">帆布鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                <li>
+                    <a href="../pages/hot.html">熱銷排行</a>
+                </li>
+                <li>
+                    <a href="#">會員中心</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/login.html">登入/註冊</a>
+                        </li>
+                        <li>
+                            <a href="../pages/profile.html">會員資料</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../pages/cart.html">購物車</a>
+                </li>
+            </ul>
+        </header>
+
+        <!--商品資訊-->
+        <!--css=product.css-->
+        <!--左區塊-->
+        <div class="frame1">
+            <div class="frame_left">
+                <div class="product_img_focus">
+                    <img id="pic1"/>
+                </div>
+                <img class="product_img" onclick="img_focus(this)" onerror="this.style.display='none'">
+                <img class="product_img" onclick="img_focus(this)" onerror="this.style.display='none'">
+                <img class="product_img" onclick="img_focus(this)" onerror="this.style.display='none'">
+                <img class="product_img" onclick="img_focus(this)" onerror="this.style.display='none'">
+            </div>
+            <script>
+                function img_focus(e) {
+                    document.getElementById("pic1").src = e.src;
+                }
+                window.onload = function () {
+                    var search_query_string = location.search.slice(1).split("&");
+                    document.getElementById("pic1").src = "../assets/images/Sneakers_" + search_query_string[0].replace("class=", "") + "/" + search_query_string[1].replace("num=", "")+"/1.png";
+
+                    for (var i = 0; i < 4; i++)
+                        document.getElementsByClassName("product_img")[i].src = "../assets/images/Sneakers_" + search_query_string[0].replace("class=", "") + "/" + search_query_string[1].replace("num=", "") + "/" + (i + 2) + ".png";
+
+
+                    
+
+
+                    //以下純粹為了展示介紹欄位
+                    if (search_query_string[0] == "class=sneaker") {
+                        if (search_query_string[1] == "num=1")
+                            document.getElementById("intro").innerHTML = "- Brand logo 運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=2")
+                            document.getElementById("intro").innerHTML = "- 經典休閒球鞋<br>- 紡織物料/皮革<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- Round toe<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=3")
+                            document.getElementById("intro").innerHTML = "- LOGO休閒運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=4")
+                            document.getElementById("intro").innerHTML = "- 拼接高筒運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- Wild 橡膠鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                    }
+                    if (search_query_string[0] == "class=leather") {
+                        if (search_query_string[1] == "num=1")
+                            document.getElementById("intro").innerHTML = "- 壓紋logo<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=2")
+                            document.getElementById("intro").innerHTML = "- 多色紋理運動鞋<br>- 牛皮/人造材質鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=3")
+                            document.getElementById("intro").innerHTML = "- 皮革鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=4")
+                            document.getElementById("intro").innerHTML = "- 低筒 壓紋 logo<br>- 皮革鞋面<br>- 紡織物料鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                    }
+                    if (search_query_string[0] == "class=suede") {
+                        if (search_query_string[1] == "num=1")
+                            document.getElementById("intro").innerHTML = "- 人造材質鞋面<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=2")
+                            document.getElementById("intro").innerHTML = "- 人造麂皮滾邊<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=3")
+                            document.getElementById("intro").innerHTML = "- 麂皮拼接網眼球鞋<br>- Leather upper<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                    }
+                    if (search_query_string[0] == "class=canvas") {
+                        if (search_query_string[1] == "num=1")
+                            document.getElementById("intro").innerHTML = "- LOGO印花運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=2")
+                            document.getElementById("intro").innerHTML = "- LOGO印花運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=3")
+                            document.getElementById("intro").innerHTML = "- 高筒帆布LOGO運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                        if (search_query_string[1] == "num=4")
+                            document.getElementById("intro").innerHTML = "- LOGO印花運動鞋<br>- 紡織物料 鞋面<br>- 紡織物料 鞋墊<br>- 橡膠 鞋底<br>- 圓形鞋頭<br>- 繫帶設計";
+                    }
+
+                }
+            </script>
+            <!--右區塊-->
+            <div class="frame_right">
+                <div class="frame_text">
+                    <p style="margin:0px;">Nova-Ht 帆布運動鞋</p>
+                    <div style="float:left;width:50%;height:100px;">
+                        <img src="../assets/images/sale.gif" style="width:130px;height:130px;">
+                    </div>
+                    <div style="float:left;color:red;height:100px;line-height:100px;">NT$ 4,000</div>
+                    <div style="float:right;color:black;width:130px;">
+                        <form style="position:relative;right:-50px;width:180px;font-size:20px;">
+                            <select name="shosesize" style="font-weight:bold;width:50px;font-size:20px;">
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                            </select>&nbsp;鞋碼(Euro)
+                        </form>
+                    </div>
+                    <div id="intro" style="float:left;width:60%;">
+                        - LOGO印花運動鞋
+                        <br>
+                        - 紡織物料 鞋面
+                        <br>
+                        - 紡織物料 鞋墊
+                        <br>
+                        - 橡膠 鞋底
+                        <br>
+                        - 圓形鞋頭
+                        <br>
+                        - 繫帶設計
+                    </div>
+                    <div style="float:right;width:130px;padding-top:80px;">
+                        <input type="button" class="addcart" onclick="" value="加入購物車">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--評論區-->
+        <div class="frame2">
+            <center>
+                <div class="comment">
+                    <font>評價</font>
+                    <table class="comment2">
+                        <tr>
+                            <th class="user">帳號</th>
+                            <th class="message">評論內容</th>
+                            <th class="user">
+                                <span>給星</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="user">test**1</td>
+                            <td class="message">非常快速就收到商品！！</td>
+                            <td class="star">
+                                <span>5星</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user">test**2</td>
+                            <td class="message">包裝完整</td>
+                            <td class="star">
+                                <span>3星</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user">test**3</td>
+                            <td class="message">超讚的CP值</td>
+                            <td class="star">
+                                <span>4星</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user"></td>
+                            <td class="message"></td>
+                            <td class="star">
+                                <span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user"></td>
+                            <td class="message"></td>
+                            <td class="star">
+                                <span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="user"></td>
+                            <td class="message"></td>
+                            <td class="star">
+                                <span></span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--個人評論-->
+                    <div class="personal">
+                        <form method="post">
+                            <!--你可以考慮 action 到 index.jsp 然後你把評論送出的code寫在index.jsp-->
+                            <div style="width:500px;background-color:antiquewhite;">
+                                <input class="comment_rating_input" type="radio" id="star5" name="rating" value="2" />
+                                <label for="star5" class="comment_rating"></label>
+                                <input class="comment_rating_input" type="radio" id="star4" name="rating" value="2" />
+                                <label for="star4" class="comment_rating"></label>
+                                <input class="comment_rating_input" type="radio" id="star3" name="rating" value="2" />
+                                <label for="star3" class="comment_rating"></label>
+                                <input class="comment_rating_input" type="radio" id="star2" name="rating" value="2" />
+                                <label for="star2" class="comment_rating"></label>
+                                <input class="comment_rating_input" type="radio" id="star1" name="rating" value="2" />
+                                <label for="star1" class="comment_rating"></label>
+                            </div>
+
+
+
+                            <textarea name="personal_message"></textarea>
+                            <input class="CaButton" type="submit" value="送出評論" />
+                        </form>
+                    </div>
+                </div>
+            </center>
+            <img class="ch" src="../assets/images/ch.gif" width="200px">
+        </div>
+        <footer>
+            <div class="">
+                <a name="contact"></a>
+                <div class="footer_img">
+                    <a href="https://zh-tw.facebook.com/veja.fairtrade"><img src="../assets/images/fb.png"></a>
+                    <a href="https://www.instagram.com/veja/"><img src="../assets/images/ig.png"></a>
+                    <a href="mailto:veja@gmail.com"><img src="../assets/images/mail.png"></a>
+                </div>
+                <p>
+                    <font>與我們聯繫</font>
+                    <br>
+                    <br>
+                    客服電話：03-1234567
+                    <br>
+                    聯絡地址：桃園市中壢區中北路XX號
+                    <br>
+                    服務時間：週一至週五&nbsp;09:00~17:00
+                </p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

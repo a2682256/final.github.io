@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,313&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <title>all</title>
+    <style>
+        @import url(../assets/css/header.css);
+        @import url(../assets/css/main.css);
+        @import url(../assets/css/banner.css);
+        @import url(../assets/css/introduction.css);
+        @import url(../assets/css/all.css);
+        @import url(../assets/css/server.css);
+    </style>
+    <script type="text/javascript" src="../assets/script/jquery.js"></script>
+    <script type="text/javascript" src="../assets/script/minwtAdShow.js"></script>
+</head>
+
+<body>
+    <!--內文框架-->
+    <div class="big">
+        <center>
+            <header>
+                <ul class="menu">
+                    <li>
+                        <a href="#">關於我們</a>
+                        <ul>
+                            <li>
+                                <a href="../pages/index.html">品牌介紹</a>
+                            </li>
+                            <li>
+                                <a href="../pages/question.html">常見問題</a>
+                            </li>
+                            <li>
+                                <a href="../pages/contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <li>
+                            <a href="#">商品類別</a>
+                            <ul>
+                                <li>
+                                    <a href="../pages/all.html">全部商品</a>
+                                </li>
+                                <li>
+                                    <a href="all.html?class=0">運動鞋</a>
+                                </li>
+                                <li>
+                                    <a href="all.html?class=1">皮革運動鞋</a>
+                                </li>
+                                <li>
+                                    <a href="all.html?class=2">麂皮運動鞋</a>
+                                </li>
+                                <li>
+                                    <a href="all.html?class=3">帆布鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                    <li>
+                        <a href="../pages/hot.html">熱銷排行</a>
+                    </li>
+                    <li>
+                        <a href="#">會員中心</a>
+                        <ul>
+                            <li>
+                                <a href="../pages/login.html">登入/註冊</a>
+                            </li>
+                            <li>
+                                <a href="../pages/profile.html">會員資料</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages/cart.html">購物車</a>
+                    </li>
+                </ul>
+            </header>
+            <!--動態廣告-->
+            <div class="banner">
+                <div class="banner_img">
+                    <a href="#"><img src="../assets/images/banner.gif"></a>
+                    <a href="#"><img src="../assets/images/banner1.png"></a>
+                    <a href="#"><img src="../assets/images/banner2.png"></a>
+                </div>
+            </div>
+        </center>
+        <!--所有商品 項目連結-->
+        <div class="item">
+            <div class="item_left">
+                <a href="../pages/all.html">全部商品</a> |
+                <a href="javascript:void(0)" onclick="change_class(0);">運動鞋</a> |
+                <a href="javascript:void(0)" onclick="change_class(1);">皮革運動鞋</a> |
+                <a href="javascript:void(0)" onclick="change_class(3);"> 麂皮運動鞋</a> |
+                <a href="javascript:void(0)" onclick="change_class(2);">帆布鞋</a>
+            </div>
+            <div class="item_right">
+                <a href="javascript:void(0)" onclick="lowto();">價格低至高</a> |
+                <a href="javascript:void(0)"
+                   onclick="highto();">價格高至低</a>
+            </div>
+        </div>
+        <!--商品區塊 第一列-->
+        <div id="product">
+            <div class="aall1">
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_sneaker/1/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=sneaker&num=1" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Esplar-Se休閒運動鞋
+                        <font color="red" style="text-align:left;">$3,500</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_sneaker/2/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=sneaker&num=2" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        V-12 經典休閒運動鞋
+                        <font color="red" style="text-align:left;">$5,200</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_sneaker/3/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=sneaker&num=3" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Nova  休閒運動鞋
+                        <font color="red" style="text-align:left;">$3,500</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_sneaker/4/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=sneaker&num=4" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Contrast 高筒運動鞋
+                        <font color="red" style="text-align:left;">$3,900</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+            </div>
+            <div class="aall1">
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_leather/1/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=leather&num=1" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        低筒皮革運動鞋
+                        <font color="red" style="text-align:left;">$5,100</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_leather/2/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=leather&num=2" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        圓頭網眼運動鞋
+                        <font color="red" style="text-align:left;">$4,800</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_leather/3/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=leather&num=3" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        素色低筒皮革運動鞋
+                        <font color="red" style="text-align:left;">$4,000</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_leather/4/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=leather&num=4" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        V-Lock 皮革運動鞋
+                        <font color="red" style="text-align:left;">$5,300</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+            </div>
+            <div class="aall1">
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_canvas/1/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=canvas&num=1" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Nova-Ht 帆布運動鞋
+                        <font color="red" style="text-align:left;">$4,000</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_canvas/2/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=canvas&num=2" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Nova-Ht 帆布運動鞋
+                        <font color="red" style="text-align:left;">$4,000</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_canvas/3/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=canvas&num=3" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Nova-Ht 帆布運動鞋
+                        <font color="red" style="text-align:left;">$3,900</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_canvas/4/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=canvas&num=4" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        Nova-Ht 帆布運動鞋
+                        <font color="red" style="text-align:left;">$3,800</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+            </div>
+            <div class="aall1">
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_suede/1/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=suede&num=1" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        網眼麂皮運動鞋
+                        <font color="red" style="text-align:left;">$5,900</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_suede/2/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=suede&num=2" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        麂皮滾邊網眼運動鞋
+                        <font color="red" style="text-align:left;">$4,000</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+                <div class="all2">
+                    <div class="img-box">
+                        <img src="../assets/images/Sneakers_suede/3/1.png" />
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <span><a href="../pages/product.html?class=suede&num=3" target="_blank">查看商品資訊</a></span>
+                        </div>
+                    </div>
+                    <p>
+                        麂皮拼接網眼球鞋
+                        <font color="red" style="text-align:left;">$4,800</font>
+                    </p>
+                </div>
+                <!--迴圈終點-->
+                <!--class=sneaker迴圈起點-->
+            </div>
+        </div>
+        <footer>
+            <div class="">
+                <a name="contact"></a>
+                <div class="footer_img">
+                    <a href="https://zh-tw.facebook.com/veja.fairtrade"><img src="../assets/images/fb.png"></a>
+                    <a href="https://www.instagram.com/veja/"><img src="../assets/images/ig.png"></a>
+                    <a href="mailto:veja@gmail.com"><img src="../assets/images/mail.png"></a>
+                </div>
+                <p>
+                    <font>與我們聯繫</font>
+                    <br>
+                    <br>
+                    客服電話：03-1234567
+                    <br>
+                    聯絡地址：桃園市中壢區中北路XX號
+                    <br>
+                    服務時間：週一至週五&nbsp;09:00~17:00
+                </p>
+
+            </div>
+        </footer>
+    </div>
+    <script>
+        var product = new Array(4);
+        window.onload = function () {
+            for (var i = 0; i < 4; i++)
+                product[i] = "<div class='aall1'>" + document.querySelectorAll('.aall1')[i].innerHTML + "</div>";
+            var search_query_string = location.search.slice(1).split("&");
+            if (search_query_string == "class=0")
+                change_class(0);
+            if (search_query_string == "class=1")
+                change_class(1);
+            if (search_query_string == "class=2")
+                change_class(3);
+            if (search_query_string == "class=3")
+                change_class(2);
+
+
+            document.getElementById("000").onload = function () {
+                alert("000");
+            }
+            document.getElementById("000").onerror = function () {
+                alert("00");
+            }
+            document.getElementById("000").src = "00.html";
+        }
+        function change_class(c) {
+            if (c < 4)
+                document.getElementById('product').innerHTML = product[c];
+        }
+        function lowto() {
+            var list = document.querySelectorAll(".all2");
+            var list_int = document.querySelectorAll(".all2 font");
+
+            var s = new Array(list.length);
+            for (i = 0; i < list.length; i++) {
+                s[i] = i;
+            }
+            for (i = 0; i < list.length; i++) {
+                for (var j = i; j > 0; j--) {
+                    if (parseInt(list_int[s[j]].innerHTML.replace("$", "").replace(",", "")) < parseInt(list_int[s[j - 1]].innerHTML
+                        .replace("$", "").replace(",", ""))) {
+                        var t = s[j];
+                        s[j] = s[j - 1];
+                        s[j - 1] = t;
+                    } else break;
+                }
+            }
+            for (i = 0; i < list.length; i++) {
+                s[i] = list[s[i]].innerHTML;
+            }
+            for (i = 0; i < list.length; i++) {
+                list[i].innerHTML = s[i];
+            }
+        }
+        function highto() {
+            var list = document.querySelectorAll(".all2");
+            var list_int = document.querySelectorAll(".all2 font");
+
+            var s = new Array(list.length);
+            for (i = 0; i < list.length; i++) {
+                s[i] = i;
+            }
+            for (i = 0; i < list.length; i++) {
+                for (var j = i; j > 0; j--) {
+                    if (parseInt(list_int[s[j]].innerHTML.replace("$", "").replace(",", "")) > parseInt(list_int[s[j - 1]].innerHTML
+                        .replace("$", "").replace(",", ""))) {
+                        var t = s[j];
+                        s[j] = s[j - 1];
+                        s[j - 1] = t;
+                    } else break;
+                }
+            }
+            for (i = 0; i < list.length; i++) {
+                s[i] = list[s[i]].innerHTML;
+            }
+            for (i = 0; i < list.length; i++) {
+                list[i].innerHTML = s[i];
+            }
+        }
+    </script>
+</body>
+</html>

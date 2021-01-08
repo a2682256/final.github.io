@@ -1,0 +1,72 @@
+.signup_{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/*表單框線*/
+form{
+  font-size: 20px;
+  font-weight: bold;
+  border:2px dashed;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+/*表單標題+label文字設定*/
+form h1,form label{
+  text-align: center;
+  font-weight: bolder;
+  color: #4d3312;
+}
+/*輸入樣式*/
+form input{
+  color: #070707;
+  font-size:16px;
+}
+/*表單位置、大小、顏色*/
+.signup_form {
+  position: relative;
+  left: 35%;
+  height: 500px;
+  width: 400px;
+  margin-top: 10px;
+  background-color: rgba(255, 249, 231, 0.952);
+}
+input[type=text], input[type=password] {
+  width: 250px;
+  height: 30px;
+  margin: 0px 0 20px 0;
+  border:2px solid;
+  background: #f3edcc;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/*登入按鈕*/
+.sign_buttom {
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f89310;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  width: 120px;
+  height: 30px;
+  margin: 10px 0 0 30px;
+  font-weight: bolder;
+}
+/*按鈕樣式*/
+.sign_buttom:hover {
+  opacity: 1;
+  transform: scale(1.1,1.1);
+  background-color: rgb(238, 98, 52);
+}
+/*點擊按鈕縮放*/
+.sign_buttom:active {
+  transform: translateY(5px);
+}

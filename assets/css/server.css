@@ -1,0 +1,207 @@
+h2 {
+    font-size: 30px;
+    padding-left: 20%;
+    margin-bottom: 0px;
+}
+h3 {
+    text-align:center;
+    font-size: 30px;
+    margin:0px;
+}
+#server_content {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.server_list {
+    padding-left: 10%;
+    font-size: 20px;
+}
+
+.server_list_left {
+    float: left;
+    width: 15%;
+}
+
+.server_list_right {
+    float: left;
+    width: 85%;
+    color: gray;
+}
+
+    .server_list_right p:first-child {
+        color: red;
+    }
+
+    .server_list_right input[type=text] {
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .server_list_right textarea {
+        width: 500px;
+        height: 150px;
+        resize: none;
+        margin-top: 10px;
+    }
+.server_func {
+    text-align: right;
+    padding-right: 20%;
+    height:30px;
+}
+    .server_func > a {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height:30px;
+        color:black;
+        text-decoration:none;
+        background-color: rgba(82, 197, 178, 0.616);
+        border-radius: 15px;
+    }
+        .server_func > a:hover {
+            background-color: #ff5c40c9;
+            color:white;
+        }
+.server_func_block {
+    display: none;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+    .server_func_block > div {
+        width: 900px;
+        height: 500px;
+        margin: 200px auto;
+        background-color: #fdfff7;
+        border-radius: 10px;
+        border: 10px solid #d6e1b9;
+    }
+    .server_func>a:focus>.server_func_block{
+        display:block;
+        color:black;
+    }
+.server_func_block > div > a + div {
+    display: block;
+    float: left;
+    width: 80%;
+    min-height: 390px;
+    color: black;
+    text-align:center;
+    padding-left: 10%;
+    padding-top: 3%;
+    font-size:20px;
+}
+    .server_func_block > div > a + div p {
+        font-size:25px;
+        margin:12px;
+    }
+    .server_func_block > div > a + div input {
+        height:25px;
+        width:200px;
+        font-size: 25px;
+        margin: 12px;
+    }
+    .server_func_block > div > div + div {
+        float: left;
+        width: 48%;
+        text-align: right;
+    }
+    .server_func_block > div > div + div + div {
+        float: right;
+        width: 48%;
+        text-align: left;
+    }
+.server_button {
+    box-shadow: 3px 4px 0px 0px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 5px;
+    border: 1px solid #29668f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+
+    .server_button:hover {
+        background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color: #408c99;
+    }
+
+    .server_button:active {
+        position: relative;
+        top: 1px;
+    }
+.server_X {
+    display:block;
+    float:right;
+    margin-left:20px;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    line-height:24px;
+    height:24px;
+    width:20px;
+    text-align:center;
+    font-family: Trebuchet MS;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    z-index:3;
+}
+
+    .server_X:hover {
+        background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+        background-color: #f6f6f6;
+    }
+
+    .server_X:active {
+        position: relative;
+        top: 1px;
+    }
+.server_func_block p{
+    display:inline-block;
+}
+.CoButton {
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background: linear-gradient(to bottom, #6db5a2 5%, #6c7c7c 100%);
+    background-color: #6db5a2;
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 25px;
+    margin: 5px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #3b8277;
+}
+
+    .CoButton:hover {
+        background: linear-gradient(to bottom, #6c7c7c 5%, #6db5a2 100%);
+        background-color: #6c7c7c;
+    }
+
+    .CoButton:active {
+        position: relative;
+        top: 1px;
+    }

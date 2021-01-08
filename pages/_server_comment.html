@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>商品管理 - 管理者模式</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,313&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <title>profile</title>
+    <style>
+        @import url(../assets/css/header.css);
+        @import url(../assets/css/main.css);
+        @import url(../assets/css/server.css);
+    </style>
+</head>
+
+<body>
+    <!--內文框架-->
+    <div class="big">
+
+        <!--css=header.css-->
+        <header>
+            <ul class="menu">
+                <li>
+                    <a href="_server_order.html">訂單管理</a>
+                </li>
+                <li>
+                    <a href="_server_product.html">商品管理</a>
+                </li>
+                <li>
+                    <a href="_server_employee.html">員工管理</a>
+                </li>
+                <li>
+                    <a href="_server_account.html">會員管理</a>
+                </li>
+                <li>
+                    <a href="_server_comment.html">評論管理</a>
+                </li>
+                <li>
+                    <a href="index.html">結束管理者模式</a>
+                </li>
+            </ul>
+        </header>
+        <h2>評論管理 - 管理者模式</h2>
+        <div class="server_func">
+            <a href="javascript:void(0)" onclick="change_func_page('func_2');">
+                刪除
+            </a>
+            <form id="func_2" style="display:none;" action="ddd">
+                <!--action 跟 name 自己設-->
+                <h3>刪除留言</h3>
+                <hr />
+                    <br />
+                    <p>留言編號</p>
+                    <input type="text" /><br />
+            </form>
+        </div>
+        <form class="server_func_block" id="server_func_block">
+            <div>
+                <a class="server_X" href="javascript:void(0)" onclick="func_x();">X</a>
+                <div id="func_page">
+
+                </div>
+                <div href="javascript:void(0)">
+                <input type="submit" class="server_button" onclick="func_x();" value="確認" /></div>
+                <div href="javascript:void(0)"><a class="server_button" href="javascript:void(0)"
+                        onclick="func_x();">取消</a></div>
+            </div>
+        </form>
+        <hr />
+        <div id="server_content">
+            <!--迴圈起點 有括號的接資料庫填進去-->
+            <div class="server_list">
+                <div class="server_list_left">
+                    <p>留言編號</p>
+                    <p>商品名稱</p>
+                    <p>暱稱</p>
+                    <p>信箱</p>
+                    <p>留言內容</p>
+                    <p>員工編號</p>
+                    <p>回覆內容</p>
+                </div>
+                <div class="server_list_right">
+                    <p>(留言編號)</p>
+                    <p>(商品名稱)</p>
+                    <p>(暱稱)</p>
+                    <p>(信箱)</p>
+                    <p>(留言內容)</p>
+                    <form>
+                        <!--action 跟 name 自己設-->
+                        <input type="text" placeholder="(管理員回覆留言編號)" /><br />
+                        <textarea></textarea>
+                        <input class="CoButton" type="submit" value="送出">
+                    </form>
+                </div>
+            </div>
+            <hr />
+            <!--迴圈終點-->
+        </div>
+
+        <footer>
+            <div class="">
+                <a name="contact"></a>
+                <div class="footer_img">
+                    <a href="https://zh-tw.facebook.com/veja.fairtrade"><img src="../assets/images/fb.png"
+                            ></a>
+                    <a href="https://www.instagram.com/veja/"><img src="../assets/images/ig.png"></a>
+                    <a href="mailto:veja@gmail.com"><img src="../assets/images/mail.png"></a>
+                </div>
+                <p>
+                    <font>與我們聯繫</font>
+                    <br>
+                    <br>
+                    客服電話：03-1234567
+                    <br>
+                    聯絡地址：桃園市中壢區中北路XX號
+                    <br>
+                    服務時間：週一至週五&nbsp;09:00~17:00
+                </p>
+
+            </div>
+        </footer>
+    </div>
+    <script>
+        function change_func_page(ID) {
+            document.getElementById('server_func_block').style.display = 'block';
+            document.getElementById('server_func_block').action = document.getElementById(ID).action;
+            document.getElementById('func_page').innerHTML = document.getElementById(ID).innerHTML;
+        }
+
+        function func_x() {
+            document.getElementById('server_func_block').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

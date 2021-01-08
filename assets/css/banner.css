@@ -1,0 +1,63 @@
+.banner{
+  height: 320px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.banner img{
+  border-radius: 10px;
+  box-shadow: 3px 3px 13px 3px #ababab;
+}
+/*位置*/
+.banner_img{
+  width: 900px;
+  height: 300px;
+  text-align:center;
+}
+.banner img{
+  width: 900px;
+  height: 300px;
+}
+/*播放長度*/
+.banner_img>a{
+  display: block;
+  position: absolute;
+  opacity: 0;
+  animation: silder 12s linear infinite;
+}
+.banner_img>a>img{
+  max-width: 100%;
+}
+
+/*動畫*/
+@keyframes silder {
+  3% {
+      opacity: 1;
+  }
+  27% {
+      opacity: 1;
+  }
+  30% {
+      opacity: 0;
+  }
+}
+/*圖片間隔時間5秒*/
+.banner_img>a:nth-child(3) {
+          animation-delay: 8s;               
+}
+.banner_img>a:nth-child(2) {
+          animation-delay: 4s;
+}
+.banner_img>a:nth-child(1) {
+          animation-delay: 0s;    
+}
+/*滑鼠移入圖片時停止播放*/
+.banner_img:hover>a{
+  animation-play-state: paused;
+  
+}
+/*滑鼠移入圖片透明效果*/
+.banner_img:hover{
+  opacity: 0.5;
+}

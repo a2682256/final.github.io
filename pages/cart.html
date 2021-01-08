@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,313&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <title>cart</title>
+    <style>
+        @import url(../assets/css/header.css);
+        @import url(../assets/css/main.css);
+        @import url(../assets/css/cart.css);
+    </style>
+</head>
+<body>
+    <!--內文框架-->
+    <div class="big">
+        <header>
+            <ul class="menu">
+                <li>
+                    <a href="../pages/index.html">關於我們</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/index.html">品牌介紹</a>
+                        </li>
+                        <li>
+                            <a href="../pages/question.html">常見問題</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">商品類別</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/all.html">全部商品</a>
+                        </li>
+                        <li>
+                            <a href="all.html?class=0">運動鞋</a>
+                        </li>
+                        <li>
+                            <a href="all.html?class=1">皮革運動鞋</a>
+                        </li>
+                        <li>
+                            <a href="all.html?class=2">麂皮運動鞋</a>
+                        </li>
+                        <li>
+                            <a href="all.html?class=3">帆布鞋</a>
+                        </li>
+                    </ul>
+                    </li>
+                <li>
+                    <a href="../pages/hot.html">熱銷排行</a>
+                </li>
+                <li>
+                    <a href="#">會員中心</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/login.html">登入/註冊</a>
+                        </li>
+                        <li>
+                            <a href="../pages/profile.html">會員資料</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../pages/cart.html">購物車</a>
+                </li>
+            </ul>
+        </header>
+        <!--購物車-->
+        <div class="cart">
+            <form method="get" action="">
+                <!--迴圈起點-->
+                <div class="product">
+                    <a class="CaButton" style="margin:140px 10px 0px 10px;" href="#">刪除</a>
+                    <div class="product_img" id="">
+                        <img src="../assets/images/Sneakers_canvas/1/1.png">
+                    </div>
+                    <div class="product_file">
+                        <div class="product_name" id="">Nova-Ht 帆布運動鞋</div>
+                        <input type="hidden" value="Nova-Ht 帆布運動鞋" />
+                        <div class="product_price" id="">$4000</div>
+                        <input type="hidden" value="4000" />
+                    </div>
+                </div>
+                <!--迴圈終點-->
+                <!--總金額-->
+                <div class="totals">
+                    <div class="totals_price">
+                        <label>總金額</label>
+                        <div class="totals_value" id="">$4000</div>
+                        <input type="hidden" value="4000" />
+                    </div>
+                </div>
+                <hr>
+                <div>訂購人</div>
+                <input class="cart_input" type="text" placeholder="(訂購人姓名)" />
+                <div>聯絡電話</div>
+                <input class="cart_input" type="text" placeholder="(聯絡電話)" />
+                <div>收件人</div>
+                <input class="cart_input" type="text" placeholder="(收件人姓名)" />
+                <div>地址</div>
+                <input class="cart_input" type="text" placeholder="(寄送地址)" />
+                <div>付款方式</div>
+                <select class="cart_input">
+                    <option type="text">信用卡</option>
+                    <option type="text">貨到付款</option>
+                    <option type="text">超商繳費</option>
+                </select>
+                <input class="CaButton" type="submit" value="結帳" />
+            </form>
+        </div>
+        <footer>
+            <div class="">
+                <a name="contact"></a>
+                <div class="footer_img">
+                    <a href="https://zh-tw.facebook.com/veja.fairtrade"><img src="../assets/images/fb.png"></a>
+                    <a href="https://www.instagram.com/veja/"><img src="../assets/images/ig.png"></a>
+                    <a href="mailto:veja@gmail.com"><img src="../assets/images/mail.png"></a>
+                </div>
+                <p>
+                    <font>與我們聯繫</font>
+                    <br>
+                    <br>
+                    客服電話：03-1234567
+                    <br>
+                    聯絡地址：桃園市中壢區中北路XX號
+                    <br>
+                    服務時間：週一至週五&nbsp;09:00~17:00
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/*header*/
+header{
+  position: static;
+  border-bottom:20px solid ;
+  border-image: url(../images/header.png) 100 round;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+/*header位置、字型*/
+.menu{
+  display:block;
+  font: 20px 微軟正黑體;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/*字型顏色*/
+ul.menu a {
+  background-color: rgba(82, 197, 178, 0.616);
+  color: rgb(46, 44, 44);
+  display: block;
+  padding: 0 30px;
+  text-decoration: none;
+  line-height: 40px;
+  border-radius: 20px;
+}
+/*內框線*/
+ul.menu li {
+  position: relative;
+  white-space: nowrap;
+  border-right:rgba(180, 172, 172, 0)  5px dotted;
+  
+}
+/*第一層靠左對齊*/
+ul.menu > li {
+  display:inline-block;
+}
+/*隱藏第二層選單*/
+ul.menu ul { 
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+/* 滑鼠滑入展開第二層選單*/
+ul.menu li:hover > ul {
+  opacity: 1;
+  transition: opacity 0.2s;
+  left: -1px;
+}
+/*第二層選單寬度*/
+ul.menu ul {
+  position: absolute;
+  z-index: 99;
+  left: -1px;
+  top: 100%;
+  min-width: 140px;
+}
+/*第二層框線*/
+ul.menu ul li {
+  border-bottom: rgb(180, 175, 172) 5px dotted;
+  border-right: none;
+}
+ul.menu ul li:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+ul.menu li:hover > ul ul { 
+  left: 99999px;
+}
+ul.menu ul li:hover > ul { 
+  left: 90%;
+}
+ul { 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 按鈕顏色*/
+ul.menu li:hover > a { 
+  background-color: #ff5c40c9;
+  color: #fff;
+}
+

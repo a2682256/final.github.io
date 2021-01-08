@@ -1,0 +1,121 @@
+body{
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  background-color: rgba(249, 255, 234, 0.794);
+}
+/*內文框架*/
+.big{
+  position: relative;
+  margin: 0 auto;
+}
+/*常見問題*/
+.question{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+/*常見問題 位置*/
+.question1{
+  position: relative;
+  left: 5%;
+}
+/*通知圖示位置*/
+.question_img{
+  float: left;
+  position: relative;
+  left: 280px;
+  top: -10px;
+}
+/*常見問題文字設定*/
+.question p{
+  width: 800px;
+  margin-left: 370px;
+  margin-top: 70px;
+  font: 20px 微軟正黑體;
+  font-weight: bolder;
+}
+/*問題顏色*/
+.question font{
+  color: rgb(161, 25, 25);
+  font-size: 25px;
+}
+/*聯絡我們*/
+.contact{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+/*內嵌地圖*/
+iframe{
+border:5px double;
+border-color: rgba(140, 140, 140, 0.701);
+width: 580px;
+height: 380px;
+margin: 50px 0px 60px 100px;
+}
+iframe:hover{
+  transform: scale(1.1,1.1);
+}
+/*聯絡我們 文字*/
+.contact_font{
+  float: right;
+  height: 200px;
+  width: 350px;
+  margin: 150px 130px 0px 0px;
+}
+.contact_font img{
+    width:80px;
+}
+.contact_font p{
+  width: 380px;
+  height: 200px;
+  font: 20px 微軟正黑體;
+  font-weight: bolder;
+  color: rgb(97, 28, 42);
+}
+.contact_font img:hover {
+  transform: scale(1.1,1.1);
+  background-color: rgb(170, 177, 255);
+  border-radius: 60px;
+}
+/*footer區塊*/
+footer{
+  border-top:1px solid;
+  border-color: rgba(118, 118, 118, 0);
+  background-color: rgba(82, 197, 178, 0.616);
+  color: rgb(15, 41, 58);
+  margin-bottom: 5px;
+  width: 100%;
+}
+footer div{
+  height: 150px;
+}
+/*footer字體大小*/
+footer p{
+  font-size:18px;
+  margin-left: 550px;
+}
+footer font{
+  font-size: 22px;
+}
+/*footer圖片位置*/
+.footer_img{
+  margin-left: 50px;
+  width: 250px;
+  height: 70px;
+  float: left;
+  position: relative;
+  left: 70px;
+  top: 50px;
+}
+footer img {
+    margin-left: 15px;
+    width: 25%;
+}
+/*滑鼠移入footer圖片樣式*/
+footer img:hover{
+  background-color: rgb(255, 239, 132);
+  border-radius: 30px;
+  transform: scale(1.2,1.2);
+}
+

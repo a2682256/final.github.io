@@ -1,0 +1,130 @@
+/*項目連結 全部商品 | 運動鞋 | 皮革運動鞋 | 麂皮運動鞋 | 帆布鞋*/
+/*大區塊*/
+body{
+  width: 100%;
+}
+.item{
+  height: 30px;
+  font:18px 微軟正黑體;
+  font-weight: bolder;
+}
+/*左邊項目文字*/
+.item_left{
+  height: 30px;
+  width: 550px;
+  float: left;
+}
+/*右邊項目文字*/
+.item_right{
+  height: 30px;
+  width: 250px;
+  float: right;
+  text-align: right;
+  margin-right: 20px;
+}
+/*超連結樣式*/
+.item a{
+  text-decoration: none;
+  color: black;
+}
+.item a:hover{
+  color: rgb(18, 53, 121);
+  background-color: rgb(75, 255, 240);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+/*商品區塊*/
+.aall1{
+  border-top:20px solid ;
+  border-image: url(../images/border_product.png) 100 round;
+  height: 360px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+/*外框大小*/
+.all2 {
+  border:2px solid;
+  border-color: rgba(99, 99, 99, 0.77);
+  width: 280px;
+  height: 290px;
+  margin: 20px 30px 0px 30px;
+  position: relative;
+}
+.all2 .img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.all2 .img-box img {
+  margin: auto;
+  transition: transform 0.5s;
+}
+
+.all2:hover .img-box img {
+  transform: scale(1.1);
+}
+.all2 .info-box {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(173, 173, 173, 0.6);
+  text-align: center;
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+
+.all2 .info-box .info-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+}
+
+.all2:hover .info-box {
+  transform: scaleY(1);
+}
+span a{
+text-decoration: none;
+color: rgb(77, 5, 211);
+font-size: 25px;
+font-weight: bold;
+margin-left: 40px;
+}
+.all22{
+  width: 330px;
+}
+/*王冠動圖*/
+.crown1,.crown2,.crown3,.crown4{
+  
+  position: relative;
+  top: 15px;
+  z-index: 1;
+}
+.crown1,.crown2,.crown3{
+  margin-right: 200px;
+}
+.crown{
+  height: 5px;
+}
+.all2>p{
+  position: block;
+  width:100%;
+}
+.all2>p>font{
+  position: relative;
+  left: 40px;
+}
+.img-box >img {
+    width:300px;
+    height:280px;
+}
+.crown{
+    position:absolute;
+    width:140px;
+    height:77px;
+    z-index:1;
+}

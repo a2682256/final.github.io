@@ -1,0 +1,133 @@
+/*大框架*/
+.profile{
+  width: 100%;
+  height: 1000px;
+  margin-bottom: 20px;
+}
+/*表單框線*/
+form{
+  font-size: 20px;
+  font-weight: bold;
+  border:2px dashed;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+/*表單標題+label文字設定*/
+form h1,form label{
+  text-align: center;
+  font-weight: bolder;
+  color: #4d3312;
+}
+/*輸入樣式*/
+form input{
+  color: #070707;
+  font-size:16px;
+}
+/*表單位置、大小、顏色*/
+.sprofile_form {
+  position: absolute;
+  left: 120px;
+  height: 450px;
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: rgba(255, 249, 231, 0.952);
+  float: left;
+}
+input[type=text], input[type=password] {
+  width: 250px;
+  height: 30px;
+  margin: 0px 0 20px 0;
+  border:2px solid;
+  background: #f3edcc;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/*登入按鈕*/
+.sprofile_buttom {
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f89310;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  width: 120px;
+  height: 30px;
+  margin: 10px 0 0 30px;
+  font-weight: bolder;
+}
+/*按鈕樣式*/
+.sprofile_buttom:hover {
+  opacity: 1;
+  transform: scale(1.1,1.1);
+  background-color: rgb(238, 98, 52);
+}
+/*點擊按鈕縮放*/
+.sprofile_buttom:active {
+  transform: translateY(5px);
+}
+/*訂單紀錄*/
+/*右邊框架*/
+.profile_right{
+  width: 600px;
+  height: 650px;
+  float: right;
+  margin: 20px 50px 20px 0px;
+}
+/*訂單紀錄 評論紀錄 框架設定*/
+.order,.message_record{
+  width: 500px;
+  height: 400px;
+  margin: 20px 20px 0px 20px;
+  text-align: center;
+  border:2px dashed;
+  background-color: rgba(255, 249, 231, 0.952);
+}
+.order{
+border-top-right-radius: 50px;
+border-top-left-radius: 50px;
+}
+.message_record{
+  
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 50px;
+}
+.profile_right table{
+  width: 450px;
+  height: 100px;
+  font-size: 18px;
+  margin: 0px 0px 0px 25px;
+  border-top: 3px solid;
+  border-right: 3px solid;
+  border-left: 3px solid;
+  border-color: rgb(87, 9, 20);
+}
+.profile_right th{
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 3px solid;
+  border-color: rgb(87, 9, 20);
+  background-color: rgb(255, 195, 160);
+}
+.profile_right td{
+  background-color: rgb(250, 247, 212);
+  border-bottom: 3px solid;
+  border-color: rgb(87, 9, 20);
+  height: 23px;
+}
+h1{
+  color: #4d3312;
+}
+/*給星*/
+.message_record font{
+color: rgb(135, 43, 20);
+font-size: 20px;
+font-weight: bold;
+}
